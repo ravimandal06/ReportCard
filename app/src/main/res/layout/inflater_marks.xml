@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_80"
+    android:layout_marginTop="@dimen/dp_20"
+    app:ignore="NamespaceTypo"
+    card_view:cardCornerRadius="@dimen/dp_2"
+    card_view:cardElevation="@dimen/dp_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cardview_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/subject_image"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_55"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="@color/colorBackroundWhite"
+            app:civ_border_width="@dimen/dp_2" />
+
+        <com.example.android.reportcard.TextView_Lato
+            android:id="@+id/subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+
+        <com.example.android.reportcard.Textview_lato_thin
+            android:id="@+id/subject_marks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_weight="1"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/sp_14" />
+
+        <com.example.android.reportcard.Textview_lato_thin
+            android:id="@+id/subject_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.reportcard.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_250">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_250"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_180"
+            android:orientation="vertical">
+
+            <com.example.android.reportcard.TextView_Lato
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_32"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/report_card"
+                android:textColor="@color/fff"
+                android:textSize="@dimen/sp_24"
+                android:textStyle="bold" />
+
+            <com.example.android.reportcard.TextView_Lato
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_28"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/school_name"
+                android:textColor="@color/fff"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <com.example.android.reportcard.Textview_lato_thin
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_28"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/student_name"
+                android:textColor="@color/fff"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/report_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"/>
+
+</LinearLayout>
